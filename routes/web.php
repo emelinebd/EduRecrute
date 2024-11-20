@@ -4,6 +4,7 @@ use Illuminate\Foundation\Application;
 use Illuminate\Support\Facades\Route;
 use Inertia\Inertia;
 use App\Models\Establishment;
+use App\Http\Controllers\SearchController;
 
 /*
 |--------------------------------------------------------------------------
@@ -39,3 +40,5 @@ Route::middleware([
 Route::get('/establishments', function () {
     return Establishment::all();
 })->name('establishments.index');
+
+Route::get('/search', [SearchController::class, 'search'])->name('search.results');
