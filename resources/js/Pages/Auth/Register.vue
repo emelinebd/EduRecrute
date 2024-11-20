@@ -7,19 +7,14 @@ import InputError from '@/Components/InputError.vue';
 import InputLabel from '@/Components/InputLabel.vue';
 import PrimaryButton from '@/Components/PrimaryButton.vue';
 import TextInput from '@/Components/TextInput.vue';
-import { ref } from 'vue';
 
-const role = ref('');
 const form = useForm({
     name: '',
     email: '',
     password: '',
     password_confirmation: '',
     terms: false,
-    establishment_name: '',
-    establishment_email: '',
-    establishment_password: '',
-    existing_establishment: '',
+    role: 'teacher', // Valeur par défaut
 });
 
 const submit = () => {
@@ -42,124 +37,67 @@ const submit = () => {
                 <InputLabel for="role" value="Choisir le rôle" />
                 <select
                     id="role"
-                    v-model="role"
+                    v-model="form.role"
                     required
                     class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500"
                 >
-                    <option value="" disabled selected>Sélectionnez un rôle</option>
                     <option value="teacher">Enseignant</option>
                     <option value="establishment">Établissement</option>
                 </select>
                 <InputError class="mt-2" :message="form.errors.role" />
             </div>
 
-            <div v-if="role === 'teacher'">
-                <h2 class="mt-4 text-lg font-semibold">Créer un compte Enseignant</h2>
-
-                <div class="mt-4">
-                    <InputLabel for="name" value="Nom" />
-                    <TextInput
-                        id="name"
-                        v-model="form.name"
-                        type="text"
-                        class="mt-1 block w-full"
-                        required
-                        autofocus
-                        autocomplete="name"
-                    />
-                    <InputError class="mt-2" :message="form.errors.name" />
-                </div>
-
-                <div class="mt-4">
-                    <InputLabel for="email" value="Email" />
-                    <TextInput
-                        id="email"
-                        v-model="form.email"
-                        type="email"
-                        class="mt-1 block w-full"
-                        required
-                        autocomplete="username"
-                    />
-                    <InputError class="mt-2" :message="form.errors.email" />
-                </div>
-
-                <div class="mt-4">
-                    <InputLabel for="password" value="Mot de passe" />
-                    <TextInput
-                        id="password"
-                        v-model="form.password"
-                        type="password"
-                        class="mt-1 block w-full"
-                        required
-                        autocomplete="new-password"
-                    />
-                    <InputError class="mt-2" :message="form.errors.password" />
-                </div>
-
-                <div class="mt-4">
-                    <InputLabel for="password_confirmation" value="Confirmer le mot de passe" />
-                    <TextInput
-                        id="password_confirmation"
-                        v-model="form.password_confirmation"
-                        type="password"
-                        class="mt-1 block w-full"
-                        required
-                        autocomplete="new-password"
-                    />
-                    <InputError class="mt-2" :message="form.errors.password_confirmation" />
-                </div>
+            <div class="mt-4">
+                <InputLabel for="name" value="Nom" />
+                <TextInput
+                    id="name"
+                    v-model="form.name"
+                    type="text"
+                    class="mt-1 block w-full"
+                    required
+                    autofocus
+                    autocomplete="name"
+                />
+                <InputError class="mt-2" :message="form.errors.name" />
             </div>
 
-            <div v-if="role === 'establishment'">
-                <h2 class="mt-4 text-lg font-semibold">Créer un compte Établissement</h2>
+            <div class="mt-4">
+                <InputLabel for="email" value="Email" />
+                <TextInput
+                    id="email"
+                    v-model="form.email"
+                    type="email"
+                    class="mt-1 block w-full"
+                    required
+                    autocomplete="username"
+                />
+                <InputError class="mt-2" :message="form.errors.email" />
+            </div>
 
-                <div class="mt-4">
-                    <InputLabel for="establishment_name" value="Nom de l'établissement" />
-                    <TextInput
-                        id="establishment_name"
-                        v-model="form.establishment_name"
-                        type="text"
-                        class="mt-1 block w-full"
-                        required
-                    />
-                    <InputError class="mt-2" :message="form.errors.establishment_name" />
-                </div>
+            <div class="mt-4">
+                <InputLabel for="password" value="Mot de passe" />
+                <TextInput
+                    id="password"
+                    v-model="form.password"
+                    type="password"
+                    class="mt-1 block w-full"
+                    required
+                    autocomplete="new-password"
+                />
+                <InputError class="mt-2" :message="form.errors.password" />
+            </div>
 
-                <div class="mt-4">
-                    <InputLabel for="establishment_email" value="Email de l'établissement" />
-                    <TextInput
-                        id="establishment_email"
-                        v-model="form.establishment_email"
-                        type="email"
-                        class="mt-1 block w-full"
-                        required
-                    />
-                    <InputError class="mt-2" :message="form.errors.establishment_email" />
-                </div>
-
-                <div class="mt-4">
-                    <InputLabel for="establishment_password" value="Mot de passe" />
-                    <TextInput
-                        id="establishment_password"
-                        v-model="form.establishment_password"
-                        type="password"
-                        class="mt-1 block w-full"
-                        required
-                    />
-                    <InputError class="mt-2" :message="form.errors.establishment_password" />
-                </div>
-
-                <div class="mt-4">
-                    <InputLabel for="existing_establishment" value="Ou rejoindre un établissement existant" />
-                    <TextInput
-                        id="existing_establishment"
-                        v-model="form.existing_establishment"
-                        type="text"
-                        class="mt-1 block w-full"
-                        placeholder="Nom de l'établissement"
-                    />
-                    <InputError class="mt-2" :message="form.errors.existing_establishment" />
-                </div>
+            <div class="mt-4">
+                <InputLabel for="password_confirmation" value="Confirmer le mot de passe" />
+                <TextInput
+                    id="password_confirmation"
+                    v-model="form.password_confirmation"
+                    type="password"
+                    class="mt-1 block w-full"
+                    required
+                    autocomplete="new-password"
+                />
+                <InputError class="mt-2" :message="form.errors.password_confirmation" />
             </div>
 
             <div v-if="$page.props.jetstream.hasTermsAndPrivacyPolicyFeature" class="mt-4">
@@ -186,4 +124,3 @@ const submit = () => {
         </form>
     </AuthenticationCard>
 </template>
-
