@@ -3,6 +3,7 @@
 use Illuminate\Foundation\Application;
 use Illuminate\Support\Facades\Route;
 use Inertia\Inertia;
+use App\Models\Establishment;
 
 /*
 |--------------------------------------------------------------------------
@@ -33,3 +34,8 @@ Route::middleware([
         return Inertia::render('Dashboard');
     })->name('dashboard');
 });
+
+
+Route::get('/establishments', function () {
+    return Establishment::all();
+})->name('establishments.index');
