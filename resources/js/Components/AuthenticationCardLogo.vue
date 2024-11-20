@@ -4,14 +4,10 @@ import { Link } from '@inertiajs/vue3';
 
 <template>
     <Link :href="'/'">
-        <svg
-            class="w-16 h-16"
-            viewBox="0 0 48 48"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-        >
-            <path d="M11.395 44.428C4.557 40.198 0 32.632 0 24 0 10.745 10.745 0 24 0a23.891 23.891 0 0113.997 4.502c-.2 17.907-11.097 33.245-26.602 39.926z" fill="#6875F5" />
-            <path d="M14.134 45.885A23.914 23.914 0 0024 48c13.255 0 24-10.745 24-24 0-3.516-.756-6.856-2.115-9.866-4.659 15.143-16.608 27.092-31.75 31.751z" fill="#6875F5" />
+        <svg width="49" height="30" viewBox="0 0 49 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M49 0.100098H31.7V7.2001H49V0.100098ZM31.7 0.100098H24.5V29.4001H31.7H43.6V22.4001H31.7V18.4001H39.4V11.3001H31.7V0.100098Z" fill="#EF3062"/>
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M22.2004 29.9V0.199951C22.3004 0.199951 6.90039 10.5 6.90039 10.5V19.6L22.2004 29.9Z" fill="#F4A500"/>
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M5.2 11.6001L0 15.0001L5.2 18.5001V11.6001Z" fill="#6652FF"/>
         </svg>
     </Link>
 </template>
