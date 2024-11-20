@@ -3,7 +3,7 @@ import { ref } from 'vue';
 
 // Define a reactive variable for the search query
 const query = ref('');
-
+const searchQuery = ref('');
 // Handle search logic (could trigger a function or call API)
 const search = () => {
     // You can use Inertia.js to make a request to a backend route or filter data.
