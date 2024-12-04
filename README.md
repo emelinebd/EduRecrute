@@ -40,3 +40,10 @@ Here are the commit types to use in this project:
 - **auth**: Changes to authentication configuration.
 - **backend**: Changes to backend code.
 - **frontend**: Changes to frontend code.
+
+
+
+Pour lancer laravel : php artisan serve
+ne pas oublier de lancer wammp !!!! 
+pour lancer le server front : npm run dev
+pour la migration des tables : php artisan migrate
