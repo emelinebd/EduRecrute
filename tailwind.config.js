@@ -20,9 +20,21 @@ export default {
             colors: {
                 'custom-gray': '#505050',
                 'yellow': '#FFFCE0',
+                'orange': '#F4A500',
+                'cerise': '#EF3062',
+                'menthe': '#2EB778',
+                'bleu': '#6652FF',
+                'gris': '#505050',
+                'noir': '#0E0E0E',
+                'opa-bleu': 'rgba(102, 82, 255, 0.75)',
+                'opa-orange': 'rgba(247, 192, 63, 0.75)',
+                'opa-menthe': 'rgba(72, 227, 156, 0.75)',
+                'opa-cerise': 'rgba(239, 48, 98, 0.20)',
             }
         },
     },
 
     plugins: [forms, typography],
 };
+
+

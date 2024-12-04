@@ -7,6 +7,7 @@ import InputError from '@/Components/InputError.vue';
 import InputLabel from '@/Components/InputLabel.vue';
 import PrimaryButton from '@/Components/PrimaryButton.vue';
 import TextInput from '@/Components/TextInput.vue';
+import Navbar from "@/Components/NavBar.vue";
 
 const form = useForm({
     name: '',
@@ -26,6 +27,7 @@ const submit = () => {
 
 <template>
     <Head title="Register" />
+    <Navbar />
 
     <AuthenticationCard>
         <template #logo>
