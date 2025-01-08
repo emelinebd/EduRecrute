@@ -5,6 +5,7 @@ use Illuminate\Support\Facades\Route;
 use Inertia\Inertia;
 use App\Models\Establishment;
 use App\Http\Controllers\SearchController;
+use App\Http\Controllers\TeacherController;
 
 /*
 |--------------------------------------------------------------------------
@@ -42,3 +43,6 @@ Route::get('/establishments', function () {
 })->name('establishments.index');
 
 Route::get('/search', [SearchController::class, 'search'])->name('search.results');
+
+Route::get('/teachers', [TeacherController::class, 'index']);
+
