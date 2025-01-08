@@ -1,5 +1,6 @@
 <script setup>
 import Navbar from '@/Components/NavBar.vue';
+import Footer from '@/Components/Footer.vue';
 import { Head, Link } from '@inertiajs/vue3';
 
 defineProps({
@@ -104,7 +105,7 @@ defineProps({
                              <img src="/images/heure.svg" alt="icoheure" class="w-32 h-auto">
                              <p class="text-2xl font-bold flex-grow">Engagement envers l'Excellence Éducative</p>
                              <p class="text-lg flex-grow">EduRecrute connecte rapidement les écoles et enseignants, afin de se concentrer sur les objectifs pédagogiques.</p>
-                             <a class="bg-opa-menthe text-white w-[200px] h-[50px] rounded-full hover:bg-opa-menthe p-3 text-center">
+                             <a class="bg-opa-menthe text-white w-[200px] h-[50px] rounded-full hover:bg-menthe p-3 text-center">
                                  En savoir plus
                              </a>
                          </div>
@@ -136,7 +137,8 @@ defineProps({
                  </div>
              </div>
         </div>
-     </div>
+    </div>
+    <Footer />
  </template>
 
  <style>
