@@ -46,3 +46,6 @@ Route::get('/search', [SearchController::class, 'search'])->name('search.results
 
 Route::get('/teachers', [TeacherController::class, 'index']);
 
+Route::get('/teachers/{id}', [TeacherController::class, 'show'])->name('teachers.show');
+
+

@@ -15,6 +15,8 @@ class Teacher extends Model
         'bio',                // Biographie de l'enseignant
         'rating',             // Évaluation de l'enseignant
         'image',              // Image de l'enseignant
+        'imgProfil',          // Ajout de imgProfil
+        'imgQui',             // Ajout de imgQui
         'location',           // Localisation de l'enseignant
         'experience',         // Expérience professionnelle
         'skillsPro',          // Compétences professionnelles (JSON)
