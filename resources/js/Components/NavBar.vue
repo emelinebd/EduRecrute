@@ -47,7 +47,6 @@ const logout = () => {
                 <Link :href="'/establishments'" class="hover:text-cerise">Écoles</Link>
                 <Link :href="'/teachers'" class="hover:text-cerise">Intervenants</Link>
                 <Link :href="'/messagerie'" class="hover:text-cerise">Messagerie</Link>
-                <Link :href="'/notification'" class="hover:text-cerise">Notifications</Link>
 
                 <div v-if="!user">
                     <Link :href="'/login'" class="bg-cerise text-white rounded-full p-2 hover:bg-bleu">Se connecter</Link>
@@ -85,7 +84,6 @@ const logout = () => {
             <Link :href="'/establishments'" class="block hover:text-gray-400">Écoles</Link>
             <Link :href="'/teachers'" class="block hover:text-gray-400">Intervenants</Link>
             <Link :href="'/messagerie'" class="block hover:text-gray-400">Messagerie</Link>
-            <Link :href="'/notification'" class="block hover:text-gray-400">Notifications</Link>
 
             <div v-if="!user">
                 <Link :href="'/login'" class="block hover:text-gray-400">Se connecter</Link>

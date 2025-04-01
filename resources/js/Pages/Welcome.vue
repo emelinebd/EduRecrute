@@ -58,17 +58,22 @@ defineProps({
                         </div>
                     </div>
                 </div>
-                <div id="section2" class="px-6 sm:px-12 lg:px-[100px] mt-6 sm:mt-[25px] pt-12 sm:pt-[83px] bg-[url('/images/arriereplansection2.svg')] bg-cover">
-                    <h2 class="text-center text-3xl sm:text-5xl font-medium">
-                        Adressez-vous aux bons profils grâce à EduRecrute
+                <div id="section2" class="px-6 sm:px-12 lg:px-[100px] pt-12 sm:pt-[83px] bg-[url('/images/arriereplansection2.svg')] bg-cover">
+                    <h2 class="text-center text-3xl sm:text-3xl font-medium">
+                        Recrutement Éducatif Simplifié : Connectez-vous aux Bonnes Opportunités !
                     </h2>
-
+                    <p class="text-base sm:text-lg pt-2">
+                        Que vous soyez un établissement scolaire privé cherchant à recruter des enseignants qualifiés ou un professeur en quête d’un emploi dans l’éducation privée, EduRecrute vous facilite la mise en relation.
+                    </p>
                     <div id="etablissement" class="flex flex-col-reverse lg:flex-row justify-between items-center mt-10 sm:mt-[44px] p-6 sm:p-20 pb-0">
                         <div class="content flex-1 text-center lg:text-left">
                             <h3 class="font-medium text-2xl sm:text-4xl mb-4 sm:mb-8">Un établissement</h3>
                             <p class="text-base sm:text-lg">
-                                Avide de transmettre vos connaissances, vous cherchez un emploi dans le domaine éducatif ?
-                                EduRecrute vous aide à trouver le job de vos rêves.
+                                Trouver des enseignants compétents peut être un défi. EduRecrute vous permet de recruter plus rapidement grâce à :
+                                Une base de candidats qualifiés : Professeurs, intervenants et formateurs prêts à enseigner.
+                                Un système de sélection efficace : Évaluation des compétences pédagogiques pour un recrutement optimisé.
+                                Un gain de temps considérable : Accédez à des profils correspondant à vos critères en quelques clics.
+                                Recrutez les meilleurs talents dès aujourd’hui !
                             </p>
                         </div>
                         <div class="img flex-1 flex justify-center lg:justify-end">
@@ -83,8 +88,12 @@ defineProps({
                         <div class="content flex-1 text-center lg:text-right">
                             <h3 class="font-medium text-2xl sm:text-4xl mb-4 sm:mb-8">Un intervenant</h3>
                             <p class="text-base sm:text-lg">
-                                Avide de transmettre vos connaissances, vous cherchez un emploi dans le domaine éducatif ?
-                                EduRecrute vous aide à trouver le job de vos rêves.
+                                Vous souhaitez enseigner dans un établissement privé mais ne trouvez pas d’offres adaptées ? EduRecrute vous aide à décrocher un emploi rapidement !
+                                Nos avantages pour les enseignants :
+                                Offres d’emploi ciblées selon votre spécialité et votre expérience.
+                                Mise en relation rapide avec des établissements à la recherche de votre profil.
+                                Accompagnement personnalisé pour maximiser vos chances de recrutement.
+                                Boostez votre carrière dans l’enseignement privé !
                             </p>
                         </div>
                     </div>
@@ -96,32 +105,47 @@ defineProps({
                     </p>
 
                     <div class="mt-12 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-                        <div class="flex flex-col items-center p-6 sm:p-8 border-2 border-solid border-opa-bleu rounded-tr-3xl rounded-bl-3xl text-center space-y-4">
+                        <div class="flex flex-col items-center p-6 sm:p-8 bg-bleu-background border-2 border-solid border-opa-bleu rounded-tr-3xl rounded-bl-3xl text-center space-y-4">
                             <img src="/images/chapeau.svg" alt="icoChapeau" class="w-20 sm:w-32 h-auto">
                             <p class="text-xl sm:text-2xl font-bold">Engagement envers l'Excellence Éducative</p>
                             <p class="text-base sm:text-lg">
-                                Avide de transmettre vos connaissances, vous cherchez un emploi dans le domaine éducatif ? EduRecrute vous aide à trouver le job de vos rêves.
-                            </p>
+                                Nous sélectionnons uniquement des enseignants qualifiés, compétents et motivés pour offrir un enseignement de qualité.
+                                <br />
+                                Évaluation des compétences pédagogiques avant chaque recrutement.
+                                <br />
+                                Des profils adaptés aux besoins des établissements privés.
+                                <br />
+                                Un processus de recrutement simplifié et optimisé.                            </p>
                             <a class="bg-opa-bleu text-white w-[160px] sm:w-[200px] h-[45px] sm:h-[50px] rounded-full hover:bg-bleu p-3 text-center">
                                 En savoir plus
                             </a>
                         </div>
-                        <div class="flex flex-col items-center p-6 sm:p-8 border-2 border-solid border-opa-orange rounded-tl-3xl rounded-br-3xl text-center space-y-4">
+                        <div class="flex flex-col items-center p-6 sm:p-8 bg-orange-background border-2 border-solid border-opa-orange rounded-tl-3xl rounded-br-3xl text-center space-y-4">
                             <img src="/images/discu.svg" alt="icoDiscu" class="w-20 sm:w-32 h-auto">
                             <p class="text-xl sm:text-2xl font-bold">Suivi continu</p>
                             <p class="text-base sm:text-lg">
-                                EduRecrute soutient les enseignants après le recrutement pour une intégration et un enseignement réussis.
-                            </p>
+                                EduRecrute soutient les enseignants et les établissements tout au long du processus de recrutement pour garantir une intégration réussie.
+                                <br />
+                                Coaching & conseils pour aider les enseignants à décrocher un poste.
+                                <br />
+                                Outils de gestion pour faciliter le recrutement et l’intégration des nouveaux enseignants.
+                                <br />
+                                Évaluation continue pour assurer un enseignement efficace et performant                            </p>
                             <a class="bg-opa-orange text-white w-[160px] sm:w-[200px] h-[45px] sm:h-[50px] rounded-full hover:bg-orange p-3 text-center">
                                 En savoir plus
                             </a>
                         </div>
-                        <div class="flex flex-col items-center p-6 sm:p-8 border-2 border-solid border-opa-menthe rounded-tr-3xl rounded-bl-3xl text-center space-y-4">
+                        <div class="flex flex-col items-center p-6 sm:p-8 bg-menthe-background border-2 border-solid border-opa-menthe rounded-tr-3xl rounded-bl-3xl text-center space-y-4">
                             <img src="/images/heure.svg" alt="icoheure" class="w-20 sm:w-32 h-auto">
                             <p class="text-xl sm:text-2xl font-bold">Connexion rapide aux écoles</p>
                             <p class="text-base sm:text-lg">
-                                EduRecrute connecte rapidement les écoles et enseignants, afin de se concentrer sur les objectifs pédagogiques.
-                            </p>
+                                Nous connectons instantanément les établissements scolaires privés avec des professeurs qualifiés, réduisant ainsi les délais de recrutement.
+                                <br />
+                                Plateforme intuitive pour une mise en relation en quelques clics.
+                                <br />
+                                Base de données d’enseignants qualifiés et disponibles immédiatement.
+                                <br />
+                                Gagnez du temps et améliorez la gestion de votre établissement.                            </p>
                             <a class="bg-opa-menthe text-white w-[160px] sm:w-[200px] h-[45px] sm:h-[50px] rounded-full hover:bg-menthe p-3 text-center">
                                 En savoir plus
                             </a>

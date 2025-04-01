@@ -34,6 +34,9 @@ export default {
                 'cerise-background': '#F5D0DA',
                 'gris-bg-input' : '#EFEFEF',
                 'orange-background' : '#FFFCE0',
+                'bg-search' : '#EFEFEF',
+                'bleu-background' : '#E1DDFC',
+                'menthe-background' : '#DFFCEF',
             }
         },
     },
